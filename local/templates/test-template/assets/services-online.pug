@@ -1,0 +1,95 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title OPTI - Онлайн услуги
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="format-detection" content="telephone=no")
+		meta(name="robots" content="nofollow,noindex")
+		link(rel="shortcut icon" href="img/favicon.png" type="image/png")
+		
+		//[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]
+		
+		link(href="css/libs.min.css", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+
+	body
+		include pugs/header.pug
+		//  ХЛЕБНЫЕ КРОШКИ  
+		.crumbs
+			.container
+				ul.crumbs__list
+					li.crumbs__li
+						a.crumbs__link(href="index.html") Главная
+					li.crumbs__li
+						a.crumbs__link(href="#") Онлайн услуги
+		//  /ХЛЕБНЫЕ КРОШКИ  
+
+		.main-page
+			.container
+				h1.desc-1 Онлайн услуги
+
+				.services
+					.row
+						.col.col-12.col-md-6.col-lg-4.services__col
+							.services__item
+								.services__head
+									.services__icons
+										img(src="img/svg/service-1.svg", alt="")
+									.services__title Помощь при ПОКУПКЕ недвижимости:
+								.services__body
+									ol
+										li 
+											a(href="#") Сопровождение при покупке вторичного жилья
+										li 
+											a(href="#") Сопровождение при покупке строящего жилья
+										li 
+											a(href="#") Сопровождение при покупке с использованием кредитных средств (Ипотека)
+										li 
+											a(href="#") Сопровождение при покупке жилья с одновременной продажей объекта недвижимости (Альтернативная сделка)
+						.col.col-12.col-md-6.col-lg-4.services__col
+							.services__item
+								.services__head
+									.services__icons
+										img(src="img/svg/service-2.svg", alt="")
+									.services__title Помощь при ПРОДАЖЕ недвижимости:
+								.services__body
+									ol
+										li 
+											a(href="#") Сопровождение продавца вторичного жилья
+										li 
+											a(href="#") Сопровождение по продаже земельного участка
+										li 
+											a(href="#") Сопровождение по продаже загородной недвижимости
+										li 
+											a(href="#") Сопровождение при продаже коммерческой недвижимости
+						.col.col-12.col-md-6.col-lg-4.services__col
+							.services__item
+								.services__head
+									.services__icons
+										img(src="img/svg/service-3.svg", alt="")
+									.services__title Помощь при АРЕНДЕ недвижимости:
+								.services__body
+									ol
+										li 
+											a(href="#") Сопровождение Арендатора вторичного жилья
+										li 
+											a(href="#") Сопровождение Арендодателя вторичного жилья
+										li 
+											a(href="#") Сопровождение Арендатора коммерческой недвижимости
+										li 
+											a(href="#") Сопровождение Арендодателя коммерческой недвижимости
+			
+			include pugs/_order-1.pug
+			include pugs/_partners-2.pug
+
+			
+			
+
+			
+		include pugs/footer.pug
+		include pugs/modals.pug
+		include pugs/_scripts.pug

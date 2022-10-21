@@ -1,0 +1,38 @@
+.crumbs{
+	padding: 17px 0 15px;
+	// margin-bottom: 1.95rem;
+
+	&__list{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	&__li{
+		display: inline-block;
+		position: relative;
+		letter-spacing: 0;
+
+		&::after{
+			content: '';
+			display: inline-block;
+			margin: 0 5px 0 10px;
+			width: 5px;
+			height: 9px;
+			background: url(../img/svg/arrow-right.svg) center / contain no-repeat;
+		}
+		&:last-child{
+			&::after{
+				display: none;
+			}
+			a{
+				text-decoration: none;
+			}
+		}
+	}
+	&__link{
+		&:hover{
+			color: @blue;
+			text-decoration: none;
+		}
+	}
+}

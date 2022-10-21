@@ -1,0 +1,96 @@
+/*  ШАПКА  */
+.header{
+  padding: 25px 0 20px;
+  background: @bg-gray;
+
+  &__row{
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .md-min({
+      justify-content: space-between;
+    });
+  }
+  &__toggle{
+    width: 34px;
+    margin: 0 15px;
+    .md-min({
+      display: none;
+    });
+  }
+  &__left{
+    .width100;
+    margin: 15px 15px;
+    order: 3;
+    text-align: center;
+    
+    .md-min({
+      width: 202px;
+      text-align: left;
+      order: 1;
+      margin-top: 0;
+      margin-bottom: 0;
+      });
+    .lg-min({
+      width: 310px;
+      padding-top: 2px;
+      });
+  }
+  &__center{
+    order: 2;
+    width: 200px;
+    margin: 0 15px;
+    text-align: center;
+
+    .lg-min({
+      margin: 0 15px;
+      padding-top: 5px;
+    });
+  }
+  &__right{
+    .width100;
+    margin: 0 15px;
+    order: 5;
+    
+    .md-min({
+      width: 230px;
+      });
+    .lg-min({
+      width: 310px;
+      });
+  }
+
+  &__desc{
+    margin: 0 0 5px;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: .4px;
+  }
+  &__subdesc{
+    margin: 0;
+    // font-weight: 300;
+    letter-spacing: 0;
+    font-size: 14px;
+    color: @gray;
+  }
+  &__time-work{
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    color: @gray;
+    // font-weight: 300;
+    letter-spacing: .1px;
+
+    img, svg{
+      display: inline-block;
+      margin-right: 3px;
+      width: 12px;
+      height: 12px;
+      fill: currentColor;
+    }
+  }
+}

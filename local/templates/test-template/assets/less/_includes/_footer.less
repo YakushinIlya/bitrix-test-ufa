@@ -1,0 +1,134 @@
+/*  Подвал  */
+.footer{
+	padding: 30px 0 30px;
+	background: #f8f8f8;
+
+	.md-min({
+		padding-top: 58px;
+		padding-bottom: 60px;
+		});
+
+	&__row{
+		justify-content: center;
+		.sm-min({
+			justify-content: space-between;
+			});
+	}
+	&__col{
+		.width100;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	&__col-1{
+		order: 15;
+		.width100;
+		
+		.xl-min({
+			order: 1;
+			width: 280px;
+			margin-right: 76px;
+			});
+	}
+	&__col-2{
+		order: 2;
+		margin-bottom: 20px;
+		.width100;
+
+		.lg-min({
+			width: 360px;
+			});
+		.xl-min({
+			margin-right: 54px;
+			});
+	}
+	&__col-3{
+		order: 5;
+		margin-bottom: 30px;
+		width: 150px;
+	}
+	&__col-4{
+		.width100;
+		margin-bottom: 30px;
+		order: 7;
+		text-align: center;
+		.sm-min({
+			width: 300px;
+			text-align: right;
+			});
+		.md-min({
+			width: 240px;
+			});
+		.xl-min({
+			order: 20;
+			});
+	}
+
+	&__nav{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li{
+			margin-bottom: .9rem;
+			line-height: 1.1;
+		}
+		&-link{
+			display: inline-block;
+			position: relative;
+			padding-left: 1.45rem;
+			text-decoration: none;
+			// font-weight: 300;
+			letter-spacing: 0;
+
+			&:hover{
+				color: @blue;
+
+				span{
+					border-color: transparent;
+				}
+			}
+
+			svg{
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 2px;
+				width: 9px;
+				height: 14px;
+				fill: @blue;
+			}
+			span{
+				border-bottom: 1px solid;
+			}
+		}
+	}
+
+	&__box-email{
+	}
+	.phone{
+		margin-top: 18px;
+		margin-bottom: 20px;
+
+		.sm-min({
+			text-align: right;
+			margin-bottom: 2rem;
+			});
+	}
+	.phone__btn{
+		margin-top: .6rem;
+	}
+	&__copyright{
+		margin-bottom: 1.1rem;
+		font-size: 14px;
+		color: @gray;
+		line-height: 1.4;
+		font-weight: 700;
+	}
+	&__desc{
+		// font-weight: 300;
+		letter-spacing: 0;
+		font-size: 14px;
+		line-height: 1.45;
+	}
+}

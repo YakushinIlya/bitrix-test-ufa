@@ -1,0 +1,34 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title OPTI - Главная
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="format-detection" content="telephone=no")
+		meta(name="robots" content="nofollow,noindex")
+		link(rel="shortcut icon" href="img/favicon.png" type="image/png")
+		
+		//[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]
+		
+		link(href="css/libs.min.css", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+
+	body
+		include pugs/header.pug
+
+		.main-page.margin-0
+
+			include pugs/index/_top.pug
+			include pugs/index/_garant.pug
+			include pugs/_order-1.pug
+			include pugs/_partners.pug
+			include pugs/_news.pug
+			include pugs/_order-2.pug
+
+			
+		include pugs/footer.pug
+		include pugs/modals.pug
+		include pugs/_scripts.pug

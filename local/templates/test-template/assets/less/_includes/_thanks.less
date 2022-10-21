@@ -1,0 +1,48 @@
+.thanks{
+	position: relative;
+	 padding-bottom: 0;
+
+	.lg-min({
+		background: @blue url(../img/bg-thanks.jpg) center / cover no-repeat;
+		min-height: 437px;
+		padding-top: 94px;
+		padding-bottom: 30px;
+	});
+
+	&__pic{
+		margin: 20px auto 0;
+		max-width: 180px;
+
+		.lg-min({
+			max-width:270px;
+			width: 270px;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			margin: 0;
+			margin-left: 103px;
+			});
+	}
+	&__wrap{
+		position: relative;
+		z-index: 1;
+		margin: 0 auto;
+		max-width: 450px;
+
+		.lg-min({
+			margin-left: 100px;
+			});
+		.xl-min({
+			margin-left: 207px;
+			});
+	}
+	&__text{
+		margin-bottom: 2.5rem;
+
+		.lg-min({
+			font-size: 18px;
+			letter-spacing: -.1px;
+			line-height: 1.45;
+			});
+	}
+}

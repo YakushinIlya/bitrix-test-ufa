@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 10" width="23" height="10">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #325bc3 } 
+	</style>
+	<g id="5">
+		<g id="з kопировать">
+			<g id="с">
+				<path id="Прямоугольник 13" class="shp0" d="M1 4L21 4L21 6L1 6L1 4Z" />
+				<path id="Прямоугольник 13 kопировать" class="shp0" d="M18.43 9.01L22.01 5.43L20.57 3.99L16.99 7.57L18.43 9.01Z" />
+				<path id="Прямоугольник 13 kопировать 2" class="shp0" d="M18.43 0.99L22.01 4.57L20.57 6.01L16.99 2.43L18.43 0.99Z" />
+			</g>
+		</g>
+	</g>
+</svg>

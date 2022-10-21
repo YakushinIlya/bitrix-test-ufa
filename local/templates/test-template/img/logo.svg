@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="527.852mm" height="92.2716mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 9635 1684" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g>
+  <g>
+   <polygon fill="#325BC3" points="9198,23 9601,23 8541,1099 8142,1099 "/>
+   <path fill="#325BC3" d="M7619 23l1179 0 -276 281 -1179 0 276 -281zm63 1138l0 219 1076 0 0 281 -1415 0 0 -562 276 -280 397 0 -334 342z"/>
+   <polygon fill="#325BC3" points="9085,1099 9635,1099 9635,1380 9413,1380 9413,1661 9085,1661 "/>
+  </g>
+  <path fill="#000" fill-rule="nonzero" d="M480 281l643 0 152 140 0 842 -152 141 -643 0 -153 -141 0 -842 153 -140zm-153 -281l-327 304 0 1076 327 304 948 0 327 -304 0 -1076 -327 -304 -948 0zm2843 1170l304 -281 0 -585 -304 -281 -1205 0 0 1638 327 0 0 -491 878 0zm-24 -749l0 351 -128 117 -726 0 0 -585 726 0 128 117zm1415 1240l0 -1357 609 0 0 -281 -1544 0 0 281 608 0 0 1357 327 0zm1766 0l0 -281 -327 0 0 -1076 327 0 0 -281 -982 0 0 281 328 0 0 1076 -328 0 0 281 982 0z"/>
+ </g>
+</svg>

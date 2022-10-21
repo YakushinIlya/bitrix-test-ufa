@@ -1,0 +1,44 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title OPTI - Спасибо за оплату
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="format-detection" content="telephone=no")
+		meta(name="robots" content="nofollow,noindex")
+		link(rel="shortcut icon" href="img/favicon.png" type="image/png")
+		
+		//[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]
+		
+		link(href="css/libs.min.css", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+
+	body
+		include pugs/header.pug
+
+		.main-page.margin-0
+			.thanks.section.section_blue
+				.container
+					.thanks__wrap
+						h1.desc-1 Спасибо за оплату
+						.thanks__text
+							p Разнообразный и богатый опыт реализация намеченных плановых заданий позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.
+
+						a.link-def(href="index.html")
+							| Вернуться на главную
+							svg.link-def__right(role="img")
+								use(xlink:href="img/svg/sprite.svg#arrow-right-small")
+
+				.thanks__pic
+					picture
+						source(srcset="img/woman-thanks-small.png" media="(max-width:992px)")
+						source(srcset="img/woman-thanks.png")
+						img(src="img/woman-thanks.png", alt="")
+
+			
+		include pugs/footer.pug
+		include pugs/modals.pug
+		include pugs/_scripts.pug

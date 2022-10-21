@@ -1,0 +1,39 @@
+//  ORDER 1  
+section.section.section_blue.order.order-1
+	.container
+		.order__head
+			.order__head-icon
+				svg(role="img")
+					use(xlink:href="img/svg/sprite.svg#insurance")
+			h2.desc-2 Каждая сделка застрахована!
+		.order__wrap.form
+			form(action="#" method="post" autocomplete="off")
+				.row
+					.col.order__col-left
+						h6.order__title Мы эксперты в недвижимости и даем вам дополнительную страховку.
+						.order__text
+							p Если в течение 3-х лет по нашей вине возникнут проблемы по сделке, мы вернем вам сумму договора в ДВОЙНОМ размере!
+					.col.order__col-right
+						.form__box-input
+							input.form__input(type="text" name="name" placeholder="Введите имя")
+						.form__box-input
+							input.form__input(type="tel" name="phone" placeholder="Введите номер телефона*" title="89012345678" required)
+						.form__box-textarea
+							textarea.form__textarea(name="message" placeholder="Введите ваше сообщение")
+
+				.row.align-items-end
+					.col.order__col-email
+						a.order__email(href="mailto:info@opti24.ru" target="_blank") info@opti24.ru
+					.col.order__col-perconal.form__perconal
+						p Отправляя заявку, вы даете согласие на 
+							a(href="#") обработку своих персональных данных
+					.col.order__col-right
+						.form__box-submit
+							button.btn1.btn1_light.btn1_h(type="submit") Получить бесплатную консультацию
+
+	.order__pic
+		picture
+			source(srcset="img/doc-1-small.png 1x, img/doc-1@2x.png 2x" media="(max-width:992px)")
+			source(srcset="img/doc-1.png")
+			img(src="img/doc-1.png", alt="Каждая сделка застрахована!")
+//  /ORDER 1  

@@ -1,0 +1,156 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title OPTI - Новости
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="format-detection" content="telephone=no")
+		meta(name="robots" content="nofollow,noindex")
+		link(rel="shortcut icon" href="img/favicon.png" type="image/png")
+		
+		//[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]
+		
+		link(href="css/libs.min.css", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+
+	body
+		include pugs/header.pug
+		.crumbs
+			.container
+				ul.crumbs__list
+					li.crumbs__li
+						a.crumbs__link(href="index.html") Главная
+					li.crumbs__li
+						a.crumbs__link(href="#") Новости
+		//  /ХЛЕБНЫЕ КРОШКИ  
+
+		.main-page
+			.container
+				.row.justify-content-between.news-header
+					.col.col-12.col-xl-3.news-header__desc
+						h1.desc-1 Новости
+					.col.col-12.col-md-6.col-lg-7.news-header__search
+						form.search(action="#" method="get")
+							.search__box-input
+								input.search__input(type="text" name="search" placeholder="Поиск по названию статьи (совпадение слов)")
+							.search__box-submit
+								button.search__submit(type="submin")
+									svg(role="img")
+										use(xlink:href="img/svg/sprite.svg#glass")
+					.col.col-12.col-md-6.col-lg-5.news-header__pagination
+						.pagination
+							span.pagination__text Страница 
+							input.pagination__input.onli-numbers(type="text" name="pagination" value="1")
+							span.pagination__text из 
+								span.pagination__count 312
+							a.pagination__arrow.pagination__arrow_prev(href="#")
+								svg(role="img")
+									use(xlink:href="img/svg/sprite.svg#arrow-left-pagination")
+							a.pagination__arrow.pagination__arrow_next(href="#")
+								svg(role="img")
+									use(xlink:href="img/svg/sprite.svg#arrow-right-pagination")
+
+				.row.justify-content-between
+					.col.col-12.col-xl-6.news__item
+						.news__card
+							a.news__pic(href="article.html")
+								img(src="img/news/1.jpg", alt="")
+							.news__box
+								.news__date 26.05.19
+								a.news__title(href="article.html") ЖК «Варшавское шоссе 141» демонстрирует высокое качество и темп строительства
+								.news__desc «Варшавское шоссе 141» - это новый индустриальный жилой проект Группы Компаний ПИК, возводящийся в 500 метрах от метро «Аннино» в Южном административном округе Москвы
+					.col.col-12.col-xl-6.news__item
+						.news__card
+							a.news__pic(href="article.html")
+								img(src="img/news/2.jpg", alt="")
+							.news__box
+								.news__date 26.05.19
+								a.news__title(href="article.html") ЖК «Варшавское шоссе 141» демонстрирует высокое качество и темп строительства
+								.news__desc «Варшавское шоссе 141» - это новый индустриальный жилой проект Группы Компаний ПИК, возводящийся в 500 метрах от метро «Аннино» в Южном административном округе Москвы
+					.col.col-12.col-xl-6.news__item
+						.news__card
+							a.news__pic(href="article.html")
+								img(src="img/news/3.jpg", alt="")
+							.news__box
+								.news__date 26.05.19
+								a.news__title(href="article.html") ТОП-10 за сентябрь самых востребованных объектов арендного бизнеса
+								.news__desc В сентябре самыми востребованными оказались объекты площадью от 58 до 72 м2. При этом стоимость объектов увеличилась на 2,4% и в среднем составляет...
+					.col.col-12.col-xl-6.news__item
+						.news__card
+							a.news__pic(href="article.html")
+								img(src="img/news/4.jpg", alt="")
+							.news__box
+								.news__date 26.05.19
+								a.news__title(href="article.html") Цена «квадрата» в новостройках продолжает снижаться
+								.news__desc За месяц стоимость кв. метра снизилась на 6,1 тыс рублей
+					.col.col-12.col-xl-6.news__item
+						.news__card
+							a.news__pic(href="article.html")
+								img(src="img/news/1.jpg", alt="")
+							.news__box
+								.news__date 26.05.19
+								a.news__title(href="article.html") ЖК «Варшавское шоссе 141» демонстрирует высокое качество и темп строительства
+								.news__desc «Варшавское шоссе 141» - это новый индустриальный жилой проект Группы Компаний ПИК, возводящийся в 500 метрах от метро «Аннино» в Южном административном округе Москвы
+					.col.col-12.col-xl-6.news__item
+						.news__card
+							a.news__pic(href="article.html")
+								img(src="img/news/2.jpg", alt="")
+							.news__box
+								.news__date 26.05.19
+								a.news__title(href="article.html") ЖК «Варшавское шоссе 141» демонстрирует высокое качество и темп строительства
+								.news__desc «Варшавское шоссе 141» - это новый индустриальный жилой проект Группы Компаний ПИК, возводящийся в 500 метрах от метро «Аннино» в Южном административном округе Москвы
+					.col.col-12.col-xl-6.news__item
+						.news__card
+							a.news__pic(href="article.html")
+								img(src="img/news/3.jpg", alt="")
+							.news__box
+								.news__date 26.05.19
+								a.news__title(href="article.html") ТОП-10 за сентябрь самых востребованных объектов арендного бизнеса
+								.news__desc В сентябре самыми востребованными оказались объекты площадью от 58 до 72 м2. При этом стоимость объектов увеличилась на 2,4% и в среднем составляет...
+					.col.col-12.col-xl-6.news__item
+						.news__card
+							a.news__pic(href="article.html")
+								img(src="img/news/4.jpg", alt="")
+							.news__box
+								.news__date 26.05.19
+								a.news__title(href="article.html") Цена «квадрата» в новостройках продолжает снижаться
+								.news__desc За месяц стоимость кв. метра снизилась на 6,1 тыс рублей
+					.col.col-12.col-xl-6.news__item
+						.news__card
+							a.news__pic(href="article.html")
+								img(src="img/news/1.jpg", alt="")
+							.news__box
+								.news__date 26.05.19
+								a.news__title(href="article.html") ЖК «Варшавское шоссе 141» демонстрирует высокое качество и темп строительства
+								.news__desc «Варшавское шоссе 141» - это новый индустриальный жилой проект Группы Компаний ПИК, возводящийся в 500 метрах от метро «Аннино» в Южном административном округе Москвы
+					.col.col-12.col-xl-6.news__item
+						.news__card
+							a.news__pic(href="article.html")
+								img(src="img/news/2.jpg", alt="")
+							.news__box
+								.news__date 26.05.19
+								a.news__title(href="article.html") ЖК «Варшавское шоссе 141» демонстрирует высокое качество и темп строительства
+								.news__desc «Варшавское шоссе 141» - это новый индустриальный жилой проект Группы Компаний ПИК, возводящийся в 500 метрах от метро «Аннино» в Южном административном округе Москвы
+
+
+				.row.news-footer
+					.col.col-12.col-md-6.col-lg-5.news-header__pagination
+						.pagination
+							span.pagination__text Страница 
+							input.pagination__input.onli-numbers(type="text" name="pagination" value="1")
+							span.pagination__text из 
+								span.pagination__count 312
+							a.pagination__arrow.pagination__arrow_prev(href="#")
+								svg(role="img")
+									use(xlink:href="img/svg/sprite.svg#arrow-left-pagination")
+							a.pagination__arrow.pagination__arrow_next(href="#")
+								svg(role="img")
+									use(xlink:href="img/svg/sprite.svg#arrow-right-pagination")
+
+			
+		include pugs/footer.pug
+		include pugs/modals.pug
+		include pugs/_scripts.pug

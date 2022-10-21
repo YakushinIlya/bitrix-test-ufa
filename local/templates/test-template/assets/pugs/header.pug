@@ -1,0 +1,210 @@
+style.
+	.aside {
+		position: fixed;
+		z-index: 500;
+		width: 100%;
+		left: 0;
+		top: 0;
+		padding: 0;
+		transition: .8s;
+		-webkit-transform: translateY(-110%);
+		-ms-transform: translateY(-110%);
+		transform: translateY(-110%);
+		opacity: 0;
+	}
+
+//  ЗАЛИПАЮЩЕЕ МЕНЮ  
+aside.aside.nav#aside
+	.aside__wrap
+		.container
+			.row.align-items-center.justify-content-between
+				.logo
+					a(href="index.html")
+						img.logo__img(src="img/logo.svg", alt="OPTI")
+
+				ul.nav__menu
+					li.nav__li
+						a.nav__link(href="services-online.html") Онлайн услуги
+						ul.nav__submenu
+							li.nav__li
+								a.nav__link(href="services-1.html") Сопровождение при покупке недвижимости
+								ul.nav__submenu
+									li.nav__li
+										a.nav__link(href="#") Сопровождение при покупке вторичного жилья
+									li.nav__li
+										a.nav__link(href="#") Сопровождение при покупке строящего жилья
+									li.nav__li
+										a.nav__link(href="services-2.html") Сопровождение при покупке с использованием кредитных средств (Ипотека)
+									li.nav__li
+										a.nav__link(href="#") Сопровождение при покупке жилья с одновременной продажей объекта недвижимости (Альтернативная сделка)
+							li.nav__li
+								a.nav__link(href="#") Сопровождение при продаже недвижимости
+							li.nav__li
+								a.nav__link(href="#") Сопровождение при аренде недвижимости
+
+					li.nav__li
+						a.nav__link(href="services-free.html") Бесплатные услуги
+						ul.nav__submenu.nav__submenu-2
+							li.nav__li
+								a.nav__link(href="#") Сопровождение при аренде недвижимости
+							li.nav__li
+								a.nav__link(href="#") Пошаговая инструкция «Как продать квартиру без риэлтера»
+							li.nav__li
+								a.nav__link(href="#") Онлайн консультация эксперта в сфере недвижимости
+							li.nav__li
+								a.nav__link(href="#") Образец договора купли продажи объекта недвижимости
+							li.nav__li
+								a.nav__link(href="#") Образец договора купли продажи объекта недвижимости с использованием кредитных средств
+							li.nav__li
+								a.nav__link(href="#") Образец договора дарения на объект недвижимости
+							li.nav__li
+								a.nav__link(href="#") Образец договора купли продажи доли объекта недвижимости
+							li.nav__li
+								a.nav__link(href="#") Образец договора мены объекта недвижимости
+							li.nav__li
+								a.nav__link(href="#") Образец договора ренты
+							li.nav__li
+								a.nav__link(href="#") Образец договора дарения объекта недвижимости
+							li.nav__li
+								a.nav__link(href="#") Образец договора аванса/задатка объекта недвижимости
+							li.nav__li
+								a.nav__link(href="#") Образец расписки на денежные средства
+							li.nav__li
+								a.nav__link(href="#") Образец обязательства на разницу в расписке
+							li.nav__li
+								a.nav__link(href="#") Образец договора найма жилого помещения
+								
+					li.nav__li
+						a.nav__link(href="price-list.html") Прайс-лист
+					li.nav__li
+						a.nav__link(href="news.html") Новости
+					li.nav__li
+						a.nav__link(href="about.html") О нас
+					li.nav__li
+						a.nav__link(href="contacts.html") Контакты
+
+				a.nav__cart(href="cart.html")
+					svg(role="img")
+						use(xlink:href="img/svg/sprite.svg#buy")
+					//- span.nav__cart-text Корзина 
+					span.nav__cart-count (0)
+
+				button.nav__burger
+					span
+					span
+					span
+	
+	.aside__cart
+		.aside__cart-title
+			span.aside__cart-name Услуга
+			|  добавлена в корзину
+//  /ЗАЛИПАЮЩЕЕ МЕНЮ  
+
+//  Шапка  
+header.header
+	.container
+		.header__row
+			.header__left
+				h2.header__desc ЭКСПЕРТНАЯ ПОМОЩЬ В
+					br
+					| СФЕРЕ НЕДВИЖИМОСТИ
+				h5.header__subdesc Круглосуточно. Онлайн. 
+					span.d-ib Гарантии по договору.
+			.header__center
+				.logo
+					a(href="index.html")
+						img.logo__img(src="img/logo.svg", alt="OPTI")
+				.header__time-work.d-md-block
+					svg(role="img")
+						use(xlink:href="img/svg/sprite.svg#clock-2")
+					|  Круглосуточно 24/7
+			.header__right
+				.phone
+					a.phone__link(href="tel:88000000000") 8 (800) 
+						strong 000 00 00
+					a.btn1.phone__btn(href="#modal-call")
+						svg(role="img")
+							use(xlink:href="img/svg/sprite.svg#call-answer")
+						span Заказать звонок
+				.header__time-work.d-block.d-md-none
+					svg(role="img")
+						use(xlink:href="img/svg/sprite.svg#clock-2")
+					|  Круглосуточно 24/7
+//  /Шапка  
+
+//  Навигация  
+nav.nav#top-menu
+	.container
+		.nav__row
+			ul.nav__menu
+				li.nav__li
+					a.nav__link(href="services-online.html") Онлайн услуги
+					ul.nav__submenu
+						li.nav__li
+							a.nav__link(href="services-1.html") Сопровождение при покупке недвижимости
+							ul.nav__submenu
+								li.nav__li
+									a.nav__link(href="#") Сопровождение при покупке вторичного жилья
+								li.nav__li
+									a.nav__link(href="#") Сопровождение при покупке строящего жилья
+								li.nav__li
+									a.nav__link(href="services-2.html") Сопровождение при покупке с использованием кредитных средств (Ипотека)
+								li.nav__li
+									a.nav__link(href="#") Сопровождение при покупке жилья с одновременной продажей объекта недвижимости (Альтернативная сделка)
+						li.nav__li
+							a.nav__link(href="#") Сопровождение при продаже недвижимости
+						li.nav__li
+							a.nav__link(href="#") Сопровождение при аренде недвижимости
+
+				li.nav__li
+					a.nav__link(href="services-free.html") Бесплатные услуги
+					ul.nav__submenu.nav__submenu-2
+						li.nav__li
+							a.nav__link(href="#") Сопровождение при аренде недвижимости
+						li.nav__li
+							a.nav__link(href="#") Пошаговая инструкция «Как продать квартиру без риэлтера»
+						li.nav__li
+							a.nav__link(href="#") Онлайн консультация эксперта в сфере недвижимости
+						li.nav__li
+							a.nav__link(href="#") Образец договора купли продажи объекта недвижимости
+						li.nav__li
+							a.nav__link(href="#") Образец договора купли продажи объекта недвижимости с использованием кредитных средств
+						li.nav__li
+							a.nav__link(href="#") Образец договора дарения на объект недвижимости
+						li.nav__li
+							a.nav__link(href="#") Образец договора купли продажи доли объекта недвижимости
+						li.nav__li
+							a.nav__link(href="#") Образец договора мены объекта недвижимости
+						li.nav__li
+							a.nav__link(href="#") Образец договора ренты
+						li.nav__li
+							a.nav__link(href="#") Образец договора дарения объекта недвижимости
+						li.nav__li
+							a.nav__link(href="#") Образец договора аванса/задатка объекта недвижимости
+						li.nav__li
+							a.nav__link(href="#") Образец расписки на денежные средства
+						li.nav__li
+							a.nav__link(href="#") Образец обязательства на разницу в расписке
+						li.nav__li
+							a.nav__link(href="#") Образец договора найма жилого помещения
+							
+				li.nav__li
+					a.nav__link(href="price-list.html") Прайс-лист
+				li.nav__li
+					a.nav__link(href="news.html") Новости
+				li.nav__li
+					a.nav__link(href="about.html") О нас
+				li.nav__li
+					a.nav__link(href="contacts.html") Контакты
+
+			a.nav__cart(href="cart.html")
+				svg(role="img")
+					use(xlink:href="img/svg/sprite.svg#buy")
+				span.nav__cart-text Корзина 
+				span.nav__cart-count (0)
+
+			button.nav__burger
+				span
+				span
+				span
+//  /Навигация  

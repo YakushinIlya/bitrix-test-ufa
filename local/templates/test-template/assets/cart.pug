@@ -1,0 +1,153 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title OPTI - Корзина
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="format-detection" content="telephone=no")
+		meta(name="robots" content="nofollow,noindex")
+		link(rel="shortcut icon" href="img/favicon.png" type="image/png")
+		
+		//[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]
+		
+		link(href="css/libs.min.css", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+
+	body
+		include pugs/header.pug
+		//  ХЛЕБНЫЕ КРОШКИ  
+		.crumbs
+			.container
+				ul.crumbs__list
+					li.crumbs__li
+						a.crumbs__link(href="index.html") Главная
+					li.crumbs__li
+						a.crumbs__link(href="#") Корзина
+		//  /ХЛЕБНЫЕ КРОШКИ  
+
+		.main-page
+			.cart#top.form
+				form(action="#" method="post" autocomplete="off")
+					.container
+						.row.justify-content-between(data-sticky-container)
+							.col.col-12.col-xl-6.cart__left
+								h1.desc-1 Корзина
+
+								.cart__block
+									.cart__head
+										.cart__header Пакеты услуг 
+											span (1)
+										.cart__box-link
+										a.link-def.cart__link(href="services-online.html")
+											span Онлайн услуги
+											svg.link-def__right(role="img")
+												use(xlink:href="img/svg/sprite.svg#arrow-right-small")
+
+									.cart__box.cart__package
+										.cart__row
+											button.cart__del(type="button")
+												svg(role="img")
+													use(xlink:href="img/svg/sprite.svg#delete-button")
+											.cart__package-name Пакет "ИПОТЕКА"
+											.cart__price 5 300 руб.
+										.cart__row
+											.cart__package-desc Проверим покупаемую квартиру и подготовим схему дальнейших этапов сделки
+											.cart__package-btns
+												a.btn1.cart__package-upgrade(href="#")
+													svg(role="img")
+														use(xlink:href="img/svg/sprite.svg#upgrade")
+													span Улучшить пакет
+												//  Пакет улучшен  
+												//  <div class="cart__max-package">Этот пакет уже включает полный перечень услуг</div>  
+
+
+								.cart__block
+									.cart__head
+										.cart__header Услуги 
+											span (2)
+										.cart__box-link
+										a.link-def.cart__link(href="price-list.html")
+											span Прайс-лист
+											svg.link-def__right(role="img")
+												use(xlink:href="img/svg/sprite.svg#arrow-right-small")
+
+									.cart__box.cart__service
+										.cart__row
+											button.cart__del(type="button")
+												svg(role="img")
+													use(xlink:href="img/svg/sprite.svg#delete-button")
+											.cart__service-name
+												strong Код услуги: 
+												span 1-35.2/э/н
+											.cart__price 6 000 руб.
+										.cart__row
+											.cart__service-desc
+												a(href="#") Проверка застройщика (учредительные документы и т.п., правомочия подписантов документов, проблемность застройщика и объекта застройки по перечням, ведущимся государственными органами)
+
+									.cart__box.cart__service
+										.cart__row
+											button.cart__del(type="button")
+												svg(role="img")
+													use(xlink:href="img/svg/sprite.svg#delete-button")
+											.cart__service-name
+												strong Код услуги: 
+												span 0-1/э
+											.cart__price 300 руб.
+										.cart__row
+											.cart__service-desc
+												a(href="#") Пакет «Стандартов» для приобретения объекта недвижимости и подготовки сделки
+
+
+
+							.col.col-12.col-xl-6.cart__right
+								.sticky#sticky(data-margin-top="60" data-sticky-class="sticky_fix" data-sticky-for="1250")
+									.cart__sticky
+										.cart__sticky-l
+											.cart__sticky-title
+												strong Введите ваши контактные данные
+												|  для осуществления оплаты
+
+										.cart__sticky-r
+											.form__box-input
+												input.form__input(type="text" name="name" placeholder="Введите имя" required)
+											.form__box-input
+												input.form__input(type="tel" name="phone" placeholder="Введите телефон*" title="89012345678" required)
+											.form__box-input
+												input.form__input(type="email" name="email" placeholder="Введите Email*" required)
+										.cart__sticky-l
+											.cart__sticky-count Всего услуг: 
+												strong 3
+											.cart__sticky-text Стоимость всех услуг:
+											.cart__total-price 11 900 руб.
+										.cart__sticky-r
+											.form__perconal
+												p Отправляя заявку, вы даете согласие на 
+													a(href="#") обработку своих персональных данных
+											button.btn1.btn1_light.cart__order(type="submit") Оплатить
+											.cart__sticky-sub Ознакомиться с 
+												a(href="#") условиями оказания услуг
+
+									.sticky__footer
+										.sticky__up
+											a.sticky-scroll-up.link-def(href="#top")
+												svg.link-def__circle-up(role="img")
+													use(xlink:href="img/svg/sprite.svg#arrow-right-circle")
+												span В начало корзины
+										.sticky__back
+											a.link-def.cart__clear(href="#")
+												| Очистить корзину
+												svg.link-def__right(role="img")
+													use(xlink:href="img/svg/sprite.svg#delete-button")
+
+				
+
+			
+			
+
+			
+		include pugs/footer.pug
+		include pugs/modals.pug
+		include pugs/_scripts.pug

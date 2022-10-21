@@ -1,0 +1,157 @@
+@import '_vars.less';
+
+
+//Прочее
+.width(@w){
+	width: ~'calc(@{w})';
+}
+.width100(){
+	width: ~'calc(100% - @{offset})';
+	// margin-left: @offset / 2;
+	// margin-right: @offset / 2;
+}
+.width50(){
+	width: ~'calc(50% - @{offset})';
+	// margin-left: @offset / 2;
+	// margin-right: @offset / 2;
+}
+
+//FONTS ADAPTIVE
+.fz18(){
+	font-size: 16px;
+  .lg-min({
+    font-size: 18px;
+  });
+}
+.fz20(){
+  font-size: 18px;
+  
+  .lg-min({
+    font-size: 20px;
+  });
+}
+
+//for retina
+.retina(@rules){
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		@rules();
+	}
+}
+
+
+.xl(@rules) {
+  @media (max-width: @w-lg - 1) { @rules(); }
+}
+.lg(@rules) {
+  @media (max-width: @w-md - 1) { @rules(); }
+}
+.md(@rules) {
+  @media (max-width: @w-sm - 1) { @rules(); }
+}
+.sm(@rules) {
+  @media (max-width: @w-xs - 1) { @rules(); }
+}
+.xs(@rules) {
+  @media (max-width: @w-xxs - 1) { @rules(); }
+}
+
+.xs-sm(@rules) {
+  @media (min-width: @w-xs) and (max-width: @w-sm) { @rules(); }
+}
+.xs-md(@rules) {
+  @media (min-width: @w-xs) and (max-width: @w-md) { @rules(); }
+}
+.xs-lg(@rules) {
+  @media (min-width: @w-xs) and (max-width: @w-lg) { @rules(); }
+}
+.xs-xl(@rules) {
+  @media (min-width: @w-xs) and (max-width: @w-xl) { @rules(); }
+}
+.sm-md(@rules) {
+  @media (min-width: @w-sm) and (max-width: @w-md) { @rules(); }
+}
+.sm-lg(@rules) {
+  @media (min-width: @w-sm) and (max-width: @w-lg) { @rules(); }
+}
+.sm-xl(@rules) {
+  @media (min-width: @w-sm) and (max-width: @w-xl) { @rules(); }
+}
+.md-lg(@rules) {
+  @media (min-width: @w-md) and (max-width: @w-lg) { @rules(); }
+}
+.md-xl(@rules) {
+  @media (min-width: @w-md) and (max-width: @w-xl) { @rules(); }
+}
+.lg-xl(@rules) {
+  @media (min-width: @w-lg) and (max-width: @w-xl) { @rules(); }
+}
+
+.xl-min(@rules) {
+  @media (min-width: @w-xl) { @rules(); }
+}
+.lg-min(@rules) {
+  @media (min-width: @w-lg){ @rules(); }
+}
+.md-min(@rules) {
+  @media (min-width: @w-md) { @rules(); }
+}
+.sm-min(@rules) {
+  @media (min-width: @w-sm) { @rules(); }
+}
+.xs-min(@rules) {
+  @media (min-width: @w-xs) { @rules(); }
+}
+
+
+//fonts
+.font(@alias, @name, @weight: 400, @style: normal){
+	@font-face{
+		font-family: @alias;
+		src: url('../fonts/@{name}.eot');
+		src: local('☺'), url('../fonts/@{name}.otf') format('otf'), url('../fonts/@{name}.ttf') format('truetype'), url('../fonts/@{name}.woff') format('woff'), url('../fonts/@{name}.svg') format('svg');
+		font-weight: @weight;
+		font-style: @style;
+	}
+}
+
+
+//Уголки
+.arrow(@width, @height, @bg, @direction){
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+
+	& when (@direction = t){
+		border-width: 0 @width/2 @height @width/2;
+		border-color: transparent transparent @bg transparent;
+	}
+	& when (@direction = r){
+		border-width: @height/2 0 @height/2 @width;
+		border-color: transparent transparent transparent @bg;
+	}
+	& when (@direction = b){
+		border-width: @height @width/2 0 @width/2;
+		border-color: @bg transparent transparent transparent;
+	}
+	& when (@direction = l){
+		border-width: @height/2 @width @height/2 0;
+		border-color: transparent @bg transparent transparent;
+	}
+	& when (@direction = tl){
+		border-width: @height @width 0 0;
+		border-color: @bg transparent transparent transparent;
+	}
+	& when (@direction = tr){
+		border-width: 0 @width @height 0;
+		border-color: transparent @bg transparent transparent;
+	}
+	& when (@direction = br){
+		border-width: 0 0 @height @width;
+		border-color: transparent transparent @bg transparent;
+	}
+	& when (@direction = bl){
+		border-width: @height 0 0 @width;
+		border-color: transparent transparent transparent @bg;
+	}		
+}
+	

@@ -1,0 +1,87 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title OPTI - Пакет «Стандартов» для приобретения объекта недвижимости и подготовки сделки
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="format-detection" content="telephone=no")
+		meta(name="robots" content="nofollow,noindex")
+		link(rel="shortcut icon" href="img/favicon.png" type="image/png")
+		
+		//[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]
+		
+		link(href="css/libs.min.css", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+
+	body
+		include pugs/header.pug
+		//  ХЛЕБНЫЕ КРОШКИ  
+		.crumbs
+			.container
+				ul.crumbs__list
+					li.crumbs__li
+						a.crumbs__link(href="index.html") Главная
+					li.crumbs__li
+						a.crumbs__link(href="services-online.html") Онлайн услуги
+					li.crumbs__li
+						a.crumbs__link(href="services-1.html") Сопровождение при покупке недвижимости
+					li.crumbs__li
+						a.crumbs__link(href="services-2.html") Сопровождение при покупке с использованием кредитных средств (Ипотека)
+					li.crumbs__li
+						a.crumbs__link(href="#") Пакет «Стандартов» для приобретения объекта недвижимости и подготовки сделки
+		//  /ХЛЕБНЫЕ КРОШКИ  
+
+		.main-page
+			.container
+				h1.desc-1 Пакет «Стандартов» для приобретения объекта недвижимости и подготовки сделки
+				.services.services_big-101
+					.row(data-sticky-container)
+						.col.col-12.col-xl-8
+							.services__package
+								h4.desc-4 Заказчик услуги получает:
+								ol
+									li
+										.services__title "СТАНДАРТ" правильного осмотра приобретаемого объекта.
+										.services__text содержит необходимые знания для того, чтобы в перспективе покупки было легче проводить Торги с Продавцом.
+										.warning
+											.warning__in В нашем стандарте есть несколько хитростей, позволяющих договориться о меньшей стоимости приобретения объекта.
+									li
+										.services__title Стандартный список документов на приобретение (отчуждение) объекта
+										.services__text Данный документ содержит стандартный перечень документов, необходимых для приобретения (отчуждения) объекта (согласно Гражданского Кодекса РФ), которые должен предоставить Продавец недвижимости покупателю. Получение и анализ таких документов минимизирует риски Покупателя недвижимости.
+									li
+										.services__title Стандартные формы «РАСПИСКИ» и «ОБЯЗАТЕЛЬСТВА»
+										.services__text Это проработанные юристами формы документов, которые подписывает Продавец недвижимости в момент совершения сделки, определяющие "полную стоимость" покупаемой недвижимости.
+											br 
+											| Не секрет, что зачастую Продавец в Договоре купли-продажи (ДКП) указывает не полную стоимость отчуждаемого объекта недвижимости, уходя от уплаты налогов.
+										.warning
+											.warning__in Наличие "расписки" (на сумму определенную в ДКП) и  "обязательства" (на оставшуюся сумму) снижает риски сторон.
+
+
+						.col.col-12.col-xl-4.services__col-101
+							.services__order#sticky(data-margin-top="60" data-sticky-class="sticky_fix" data-sticky-for="1250")
+								.services__title СТОИМОСТЬ:
+								.services__price 300 руб.
+								.services__text.services__text-101 Срок оказания услуги: 1 минута
+								.services__text.services__text-102 Вы получаете полный пакет документов сразу после оплаты
+								a.btn1.btn1_light(href="#") Заказать
+
+
+
+
+
+			
+			include pugs/_order-1.pug
+			include pugs/_managers.pug
+			include pugs/_order-3-2.pug
+			include pugs/_partners-2.pug
+
+			
+			
+
+			
+		include pugs/footer.pug
+		include pugs/modals.pug
+		include pugs/_scripts.pug

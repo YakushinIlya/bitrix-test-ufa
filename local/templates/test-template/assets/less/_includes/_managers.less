@@ -1,0 +1,83 @@
+.managers{
+	.lg-min({
+		padding-top: 93px;
+		padding-bottom: 67px;
+		});
+
+	&__head-text{
+		.block-left-border-2{
+			.lg-min({
+				margin-left: -21px;
+				margin-top: 10px;
+				font-size: 20px;
+			});
+		}
+	}
+	&__head{
+		.lg-min({
+			margin-bottom: 25px;
+			});
+	}
+
+	&__item{
+		max-width: 282px;
+		margin: 0 auto 1.3rem;
+		background: #fff;
+		box-shadow: 0px 0px 44.62px 1.38px rgba(0, 0, 0, 0.04);
+		display: flex;
+		flex-direction: column;
+	}
+	&__body{
+		padding-top: 1.2rem;
+		padding-bottom: 1.1rem;
+	}
+	&__footer{
+		margin-top: auto;
+		padding-bottom: 1.2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__body, &__footer{
+		padding-left: 1.45rem;
+		padding-right: 1.45rem;
+	}
+	&__name{
+		margin-bottom: .3rem;
+		font-weight: 800;
+		font-size: 1.2rem;
+		color: @blue;
+		letter-spacing: .5px;
+	}
+	&__prof{
+		margin-bottom: 1rem;
+		color: @gray;
+		letter-spacing: 0px;
+	}
+	&__text{
+		line-height: 1.4;
+	}
+	&__count{
+		font-weight: 800;
+		color: @blue;
+		letter-spacing: .5px;
+	}
+	&__btn{
+		font-weight: 700;
+		padding: 10px 12px 9px;
+
+		.sm-min({
+			padding-left: 1.35rem;
+			padding-right: 1.35rem;
+			});
+
+		svg{
+			vertical-align: text-bottom;
+			margin-right: .75rem;
+		}
+	}
+
+	&__more{
+		display: none;
+	}
+}

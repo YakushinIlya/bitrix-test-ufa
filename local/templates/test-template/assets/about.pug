@@ -1,0 +1,107 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title OPTI - О компании
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="format-detection" content="telephone=no")
+		meta(name="robots" content="nofollow,noindex")
+		link(rel="shortcut icon" href="img/favicon.png" type="image/png")
+		
+		//[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]
+		
+		link(href="css/libs.min.css", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+
+	body
+		include pugs/header.pug
+		//  ХЛЕБНЫЕ КРОШКИ  
+		.crumbs
+			.container
+				ul.crumbs__list
+					li.crumbs__li
+						a.crumbs__link(href="index.html") Главная
+					li.crumbs__li
+						a.crumbs__link(href="#") О компании
+		//  /ХЛЕБНЫЕ КРОШКИ  
+
+		.main-page.margin-0
+			.about.section.section_blue
+				.container
+					.about__wrap
+						h1.desc-1 О компании
+						.about__subtitle Социальный online-портал услуг "ОПТИМИЗАТОР" —
+						.about__text
+							p первая и единственная инновационная площадка подготовки и/или проведения любых операций в сфере недвижимости, функционирующий по всей России, 24 часа в сутки, 7 дней в неделю, 365 дней в году. Уникален по своему строению, позволяюет с 10 кратной выгодой, тотальным контролем происходящей ситуации и пост-оплатой конструировать сделку самостоятельно!
+						.about__small-text Разработчик социального online-портала "ОПТИМИЗАТОР"- Стратегическая компания по оптимизации бизнес-процессов и внедрению инновационных проектов на рынок России "ПУТЕВОДНАЯ ЗВЕЗДА города"/ LLC "LODESTAR-CITY"
+
+					.about__quotes
+						.quotes
+							p "ОПТИМИЗАТОР" - место "легальных встреч" Продавцов, Покупателей и Посредников для взаимовыгодного сотрудничества. Созванивайтесь, встречайтесь, общайтесь напрямую и принимайте самостоятельные решения. Мы предоставляем открытый сервис услуг, и не теряемся переходя от слов к делу. Уверены на 100%, что тебе будет не выгодно совершать любые действия с недвижимостью без нас.
+						.quotes__subtitle Шивагорнова Кристина,
+							br 
+							| Вице-президент компании
+
+
+				.about__pic
+					picture
+						source(srcset="img/woman-about-small.png" media="(max-width:992px)")
+						source(srcset="img/woman-about.png")
+						img(src="img/woman-about.png", alt="")
+
+			.about__block.section
+				.container
+					.row.justify-content-between
+						.col.col-12.col-lg-6.about__advant
+							.advant
+								h2.desc-3 Заголовок для преимуществ
+								.advant__wrap
+									.advant__item
+										.advant__icon
+											svg(role="img")
+												use(xlink:href="img/svg/sprite.svg#24-hours")
+										.advant__text Бесплатная консультация 24/7
+									.advant__item
+										.advant__icon
+											svg(role="img")
+												use(xlink:href="img/svg/sprite.svg#document-3")
+										.advant__text Каждая сделка застрахована
+									.advant__item
+										.advant__icon
+											svg(role="img")
+												use(xlink:href="img/svg/sprite.svg#visitor")
+										.advant__text Специализируемся на недвижимости
+									.advant__item
+										.advant__icon
+											svg(role="img")
+												use(xlink:href="img/svg/sprite.svg#shield")
+										.advant__text 3 года гарантии
+									.advant__item
+										.advant__icon
+											svg(role="img")
+												use(xlink:href="img/svg/sprite.svg#24-hours")
+										.advant__text Бесплатная консультация 24/7
+									.advant__item
+										.advant__icon
+											svg(role="img")
+												use(xlink:href="img/svg/sprite.svg#document-3")
+										.advant__text Каждая сделка застрахована
+
+
+
+						.col.col-12.col-lg-6.about__info
+							h2.desc-3 Банковские реквизиты:
+							.block-left-border Филиал по управлению служебными 
+								br 
+								| зданиями ПАО «Газпром»
+							p ИНН 7736050003 КПП 781043004
+							p р/с 40702810300000000468 в Банке ГПБ (АО) г. Москва
+							p к/с 30101810200000000823 БИК 044525823
+
+			
+		include pugs/footer.pug
+		include pugs/modals.pug
+		include pugs/_scripts.pug

@@ -1,0 +1,58 @@
+//  Модальное окно Получить консультацию  
+.modal.lity-hide#modal-consult
+	.modal__wrap
+		button.modal__close(data-lity-close)
+			svg(role="img")
+				use(xlink:href="img/svg/sprite.svg#close")
+		.form.form__modal
+			h3.form__desc Получить профессиональную консультацию
+			.form__subdesc Заполните форму, и в течение 
+				strong 10 минут
+				|  наш специалист свяжется с вами и ответит на все интересующие вопросы.
+			form.form-box(action="send.php" method="post")
+				.form__box-input
+					input.form__input(type="text" name="name" placeholder="Введите имя")
+				.form__box-input
+					input.form__input(type="tel" name="phone" placeholder="Введите номер телефона*" title="89012345678" required)
+				.form__perconal
+					p Отправляя заявку, вы даете согласие на 
+						a(href="#") обработку своих персональных данных
+				.form__box-submit
+					button.btn1.btn1_light.form__submit(type="submit" name="submit") Получить консультацию
+					input(type="hidden" name="title" value="Получить консультацию")
+//  /Модальное окно Получить консультацию  
+
+//  Модальное окно Заказать звонок  
+.modal.lity-hide#modal-call
+	.modal__wrap
+		button.modal__close(data-lity-close)
+			svg(role="img")
+				use(xlink:href="img/svg/sprite.svg#close")
+		.form.form__modal
+			h3.form__desc Получить консультацию специалиста
+			.form__subdesc Введите свои контактные данные, и в течение 
+				strong 10 минут
+				|  наш специалист перезвонит вам.
+			form.form-box(action="send.php" method="post")
+				.form__box-input
+					input.form__input(type="text" name="name" placeholder="Введите имя")
+				.form__box-input
+					input.form__input(type="tel" name="phone" placeholder="Введите номер телефона*" title="89012345678" required)
+				.form__perconal
+					p Отправляя заявку, вы даете согласие на 
+						a(href="#") обработку своих персональных данных
+				.form__box-submit
+					button.btn1.btn1_light.form__submit(type="submit" name="submit") Заказать звонок
+					input(type="hidden" name="title" value="Заказать звонок")
+//  /Модальное окно Заказать звонок  
+
+
+//  Модальное окно Заявка отправлена  
+.modal.lity-hide#modal-thanks
+	.modal__wrap
+		button.modal__close(data-lity-close)
+			svg(role="img")
+				use(xlink:href="img/svg/sprite.svg#close")
+		h3.form__desc Заявка отправлена
+		h5.form__subdesc Мы свяжемся с Вами в ближайшее время
+//  /Модальное окно Заявка отправлена  

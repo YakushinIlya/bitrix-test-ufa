@@ -1,0 +1,56 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title OPTI - Прайс-лист
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="format-detection" content="telephone=no")
+		meta(name="robots" content="nofollow,noindex")
+		link(rel="shortcut icon" href="img/favicon.png" type="image/png")
+		
+		//[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]
+		
+		link(href="css/libs.min.css", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+
+	body
+		include pugs/header.pug
+		//  ХЛЕБНЫЕ КРОШКИ  
+		.crumbs
+			.container
+				ul.crumbs__list
+					li.crumbs__li
+						a.crumbs__link(href="index.html") Главная
+					li.crumbs__li
+						a.crumbs__link(href="#") Прайс-лист
+		//  /ХЛЕБНЫЕ КРОШКИ  
+
+		.main-page
+			.container
+				.row.justify-content-between
+					.col.col-12.col-lg-5
+						h1.desc-1 Прайс-лист
+					.col.col-12.col-lg-7.news-header__search
+						form.search(action="#" method="get")
+							.search__box-input
+								input.search__input(type="text" name="search" placeholder="Поиск по коду услуги / названию")
+							.search__box-submit
+								button.search__submit(type="submit")
+									svg(role="img")
+										use(xlink:href="img/svg/sprite.svg#glass")
+
+				include pugs/_table.pug
+			
+			include pugs/_order-1.pug
+			include pugs/_managers.pug
+			include pugs/_order-3.pug
+			include pugs/_partners-2.pug
+			
+
+			
+		include pugs/footer.pug
+		include pugs/modals.pug
+		include pugs/_scripts.pug

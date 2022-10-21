@@ -1,0 +1,35 @@
+.advant{
+	max-width: 480px;
+
+	&__wrap{
+		margin: 1.45rem -15px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		margin: 0 15px 1.5rem;
+		.width100;
+
+		.sm-min({
+			width: 210px;
+			});
+	}
+	&__icon{
+		width: 40px;
+		height: 40px;
+		margin-right: 20px;
+
+		svg{
+			width: 40px;
+			height: 40px;
+			fill: @blue;
+		}
+	}
+	&__text{
+		.width('100% - 60px');
+
+	}
+}

@@ -1,0 +1,66 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title OPTI - Сопровождение при покупке недвижимости
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="format-detection" content="telephone=no")
+		meta(name="robots" content="nofollow,noindex")
+		link(rel="shortcut icon" href="img/favicon.png" type="image/png")
+		
+		//[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]
+		
+		link(href="css/libs.min.css", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+
+	body
+		include pugs/header.pug
+		//  ХЛЕБНЫЕ КРОШКИ  
+		.crumbs
+			.container
+				ul.crumbs__list
+					li.crumbs__li
+						a.crumbs__link(href="index.html") Главная
+					li.crumbs__li
+						a.crumbs__link(href="services-online.html") Онлайн услуги
+					li.crumbs__li
+						a.crumbs__link(href="#") Сопровождение при покупке недвижимости
+		//  /ХЛЕБНЫЕ КРОШКИ  
+
+		.main-page
+			.container
+				h1.desc-1 Сопровождение при покупке недвижимости
+
+				.services.services_big
+					.services__row
+						.row
+							.services__head.services__head_big
+								.services__icons
+									img(src="img/svg/service-1.svg", alt="")
+							.services__body.services__body_big
+								div
+									ol
+										li 
+											a(href="#") Сопровождение при покупке вторичного жилья
+										li 
+											a(href="#") Сопровождение при покупке строящего жилья
+								div
+									ol
+										li 
+											a(href="services-2.html") Сопровождение при покупке с использованием кредитных средств (Ипотека)
+										li 
+											a(href="#") Сопровождение при покупке жилья с одновременной продажей объекта недвижимости (Альтернативная сделка)
+			
+			include pugs/_order-1.pug
+			include pugs/_partners-2.pug
+
+			
+			
+
+			
+		include pugs/footer.pug
+		include pugs/modals.pug
+		include pugs/_scripts.pug

@@ -1,0 +1,174 @@
+.top{
+	position: relative;
+  padding: 30px 0 0;
+  background: @blue url('../img/bg1-small.jpg') center bottom no-repeat;
+  color: #fff;
+
+  .lg-min({
+  	padding-top: 93px;
+  	padding-bottom: 30px;
+  	background: url('../img/bg1.jpg') center top / cover no-repeat;
+  	min-height: 620px;
+  	});
+	
+	&__pic{
+		position: relative;
+		margin: 35px auto 0;
+		width: 290px;
+
+		.lg-min({
+			width: 650px;
+			max-width: 785px;
+			position: absolute;
+			z-index: 0;
+			bottom: 0;
+			left: 50%;
+			margin: 0;
+			margin-left: -60px;
+			});
+		.xl-min({
+			width: 785px;
+			margin-left: -178px;
+			});
+
+		img{
+			display: block;
+			position: relative;
+			left: -70px;
+			width: 347px;
+			max-width: 347px;
+
+			.lg-min({
+				position: static;
+				max-width: 100%;
+				width: auto;
+				});
+		}
+	}
+	&__pic-title{
+		position: absolute;
+		left: 150px;
+		top: 0;
+		font-weight: 300;
+		line-height: 1.35;
+		letter-spacing: .4px;
+		text-align: left;
+
+		.lg-min({
+			position: absolute;
+			top: -85px;
+			left: 50%;
+			margin-left:-50px;
+			width: 250px;
+			});
+		.xl-min({
+			top: 68px;
+			margin-left: 184px;
+			width: 220px;
+			});
+
+		&::before{
+			content: '';
+			display: block;
+			margin-bottom: 10px;
+			width: 50px;
+			height: 2px;
+			background: #fff;
+
+			.xl-min({
+				position: absolute;
+		    top: 12px;
+		    left: -68px;
+				});
+		}
+
+		strong{
+			font-weight: 800;
+			font-size: 1.25em;
+		}
+	}
+	&__wrap{
+		position: relative;
+		z-index: 2;
+
+		.lg-min({
+			max-width: 670px;
+			});
+	}
+	&__advant{
+		margin: 0 auto 23px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		text-align: left;
+		.sm-min({
+			max-width: 500px;
+			});
+		.lg-min({
+			margin-left: 0;
+			margin-top: 30px;
+			});
+	}
+	&__advant-item{
+		width: 100%;
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+
+		.sm-min({
+			width: 240px;
+			margin-bottom: 30px;
+			align-items: flex-start;
+			});
+	}
+	&__advant-icon{
+		flex: 0 0 50px;
+		margin-right: 10px;
+		text-align: center;
+
+		svg{
+			width: 40px;
+			height: 40px;
+			fill: currentColor;
+		}
+	}
+	&__advant-text{
+		line-height: 1.4;
+		font-weight: 300;
+
+		strong{
+			font-weight: 800;
+		}
+	}
+	&__btns{
+		text-align: center;
+
+		.lg-min({
+			position: relative;
+			text-align: left;
+			});
+
+		&::after{
+			.lg-min({
+				content: '';
+				display: block;
+				position: absolute;
+				background: #fff;
+				width: 1px;
+				height: 40px;
+				top: -54px;
+	    	left: 19px;
+    	});
+		}
+	}
+
+	&__box-down{
+		display: none;
+
+		.lg-min({
+			display: block;
+			margin-top: 2.7rem;
+			text-align: left;
+		});
+	}
+}

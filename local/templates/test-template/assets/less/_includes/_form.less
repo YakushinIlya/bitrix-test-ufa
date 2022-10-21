@@ -1,0 +1,115 @@
+@import '_vars.less';
+
+/*  ФОРМА  */
+.form{
+  &__desc{
+    margin-bottom: 1.35rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .8px;
+  }
+  &__subdesc{
+    position: relative;
+    margin-bottom: 1.35rem;
+    padding-left: 20px;
+    &:extend(.fz18);
+    line-height: 1.35;
+
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      width: .2rem;
+      background: currentColor;
+      top: 3px;
+      bottom: 7px;
+    }
+  }
+  &__box-input, &__box-textarea{
+    max-width: 300px;
+    margin: 0 auto 1.2rem;
+  }
+  &__box-textarea{
+    margin-top: 30px;
+  }
+  &__box-submit{
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  &__input, &__textarea{
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 20px;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    background: transparent;
+    // font-weight: 300;
+    font-size: 16px;
+    outline: none;
+    letter-spacing: .3px;
+
+    &::placeholder{
+      color: #fff;
+    }
+    &:focus{
+      border-color: rgba(255,255,255,1);
+    }
+  }
+  &__textarea{
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+    max-width: 300px;
+    padding-top: 8px;
+    border: 1px solid rgba(255,255,255,.2);
+  }
+  &__submit{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    width: 100%;
+    border: none;
+
+    &[disabled]{
+      background: darken(@blue, 10%);
+      cursor: not-allowed;
+    }
+  }
+  &__policy{
+    display: inline-block;
+  }
+  &__box-checkbox{
+    text-align: center;
+    margin-top: 20px;
+  }
+  &__checkbox{
+    display: none;
+
+    &:checked + .form__label-checkbox::before{
+      background: #000;
+    }
+  }
+  &__label-checkbox{
+    display: inline-block;
+    cursor: pointer;
+
+    &::before{
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 1px solid;
+      box-shadow: inset 0 0 0 3px #fff;
+      margin-right: 7px;
+      background: #fff;
+    }
+  }
+  &__perconal{
+    letter-spacing: .1px;
+    font-size: 12px;
+    color: rgba(255,255,255,.5);
+    line-height: 1.4;
+  }
+}
